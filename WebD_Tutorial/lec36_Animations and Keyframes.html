@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and keyframes</title>
+
+    <style>
+        .container{
+            background-color: greenyellow;     
+        }
+
+        .box{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* animation-name: himank1;
+            animation-duration: 4s;
+            animation-iteration-count: 2; */
+            /* alternate likjne se animation animate hone ke baad initial position pe aa jayega */
+            /* whereas forward se animate hone ke baad vahi reh jayega */
+            /* animation-fill-mode: backwards;   */
+            /* animation-timing-function:ease-in; */
+            /* start me delay seconds ke baad start hoga animation */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+
+            /* Shorthand technique to write all above function in one line is- */
+            /* animation:   name       duration   timing-function   delay   iteration-count   direction   fill-mode; */
+            /* animation:   himank1    4s         ease-in           2s      2                 forwards    alternate; */
+            animation: himank 4s ease-in 1s 2 forwards alternate-reverse ;
+        }
+
+        @keyframes himank1 {
+            0%{
+                top: 0px;
+                left: 0%;
+            }
+            25%{
+                top: 200px;
+                left: 0px;
+            }
+            50%{
+                top: 200px;
+                left: 200px;
+            }
+            75%{
+                top: 0px;
+                left: 200px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        @keyframes himank {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objects</title>
+</head>
+
+<body>
+    <div class="container">
+        This is Math Object tutorial.
+    </div>
+
+    <script>
+
+        // Printing Math Object
+        let m = Math;
+        console.log(m);
+
+        // E:2.718281828459045
+        // LN2:0.6931471805599453
+        // LN10:2.302585092994046
+        // LOG2E:1.4426950408889634
+        // LOG10E:0.4342944819032518
+        // PI:3.141592653589793
+        // SQRT1_2:0.7071067811865476
+        // SQRT2:1.4142135623730951
+
+        // Printing the constants from the math Object
+        console.log('The value of MATH.E is',Math.E);
+        console.log('The value of MATH.LN2 is',Math.LN2);
+        console.log('The value of MATH.LOG2E is',Math.LOG2E);
+        console.log('The value of MATH.PI is',Math.PI);
+        console.log('The value of MATH.SQRT2 is',Math.SQRT2);
+
+        // Printing the function from he math object
+        let a = 687.654;
+        let b = 864.685;  
+
+        console.log('The values of a and b is',a,b);
+        console.log('The rounded values of a and b is', Math.round(a), Math.round(b));
+
+        console.log('3 raised to the power 2 is', Math.pow(3,2));
+        console.log('2 raised to the power 12 is', Math.pow(2,12));
+
+        console.log('Square root of 36 is',Math.sqrt(36));
+        console.log('Square root of 36 is',Math.sqrt(81));
+        console.log('Square root of 36 is',Math.sqrt(50));
+
+        // Ceil and Floor
+        console.log('5.3 rounded up to the nearesr integer is',Math.ceil(5.3));
+        console.log('5.8 rounded down to the nearesr integer is',Math.floor(5.8));
+
+        // Absolute function
+        console.log('Absolute value of 7.88 is',Math.abs(7.88));
+        console.log('Absolute value of -7.88 is',Math.abs(-7.88));
+
+        // Trigonometric Functions
+        console.log('The valur of sin(pi) is',Math.sin(Math.PI));
+        console.log('The valur of sin(pi/2) is',Math.sin(Math.PI/2));
+        console.log('The valur of tan(pi/2) is',Math.tan(Math.PI/2));
+        console.log('The valur of cos(pi/2) is',Math.cos(Math.PI/2));
+
+        // Min and Max Function
+        console.log('Minimum value of 4,8,6 is',Math.min(4,8,6));
+        console.log('Minimum value of 48454,63548,35356 is',Math.min(48454,63548,35356));
+        console.log('Maximum value of 48454,63548,35356 is',Math.max(48454,63548,35356));
+
+        // Generating a random number
+        // Random number will generate number between 0 and 1 but we can manipulate the range by putting them in an equation
+        let r = Math.random();
+        console.log(r);
+
+        // Random number between (a,b) = a + (b-a)*Math.random();
+        let a1 = 50;
+        let b1 = 60;
+        let r50_60 = a1 + (b1-a1)*Math.random();
+        console.log("Random number between 50 and 60 is",r50_60);
+
+        // Integer random number between 50 and 60 
+        console.log("Rounded random number between 50 and 60 is",Math.round(r50_60));
+
+    </script>
+
+</body>
+</html>

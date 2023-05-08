@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists and Tables</title>
+</head>
+
+<body>
+    <ul>
+        <li>This is my first unordered list.</li>
+        <li>This is my second unordered list.</li>
+        <ul type="circle">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+        <li>This is my third unordered list.</li>
+    </ul>
+    <ul type="square">
+        <li>This is my first ordered list.</li>
+        <li>This is my second ordered list.</li>
+        <li>This is my third ordered list.</li>
+    </ul>
+    <!-- Type of list should be done in CSS -->
+    <ol>
+        <li>This is my first unordered list.</li>
+        <li>This is my second unordered list.</li>
+        <li>This is my third unordered list.</li>
+    </ol>
+    <ol type="a">
+        <li>This is my first ordered list.</li>
+        <li>This is my second ordered list.</li>
+        <li>This is my third ordered list.</li>
+    </ol>
+    <hr>
+
+    <!-- Table-->
+    <table border="1" cellspacing="0" cellpadding="5" style="text-align: center;">
+        <caption>Employee Data of a Company</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Emp ID</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Himank</td>
+                <td>555</td>
+                <td>Programmer</td>
+            </tr>
+            <tr>
+                <td>Lakshya</td>
+                <td>666</td>
+                <td>Developer</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- [Line-73] <th colspan="2">Role</th> This attribute is used to create multiple cell spanning columns. -->
+    <table border="1" cellspacing="0" cellpadding="5" style="text-align: center;">
+        <caption>Employee Data of a Company</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <!-- <th>Emp ID</th> -->
+                <th colspan="2">Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Himank</td>
+                <td>555</td>
+                <td>Programmer</td>
+            </tr>
+            <tr>
+                <td>Lakshya</td>
+                <td>666</td>
+                <td>Developer</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

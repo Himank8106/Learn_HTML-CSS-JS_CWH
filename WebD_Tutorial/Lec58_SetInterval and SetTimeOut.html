@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+
+    <script>
+
+        console.log('This is lecture 58.');
+
+        // setTimeOut --> Allows us to run the function after given time interval.
+        // cleatTimeOut --> Allows us to run the function repeatedly after given time interval.
+
+        function greet(name, byetext){
+            console.log("Hello "+name+" "+byetext);
+        }
+
+        // 3000 is time interval in milli seconds (ie. 3000ms = 3s)
+        // setTimeout(greet, 3000, "Himank,", "Take Care");
+
+        // setTimeout(greet(),3000); --> Wrong as it is calling the function inside the setTimeout  
+
+
+        // clearTimeout se delay ke baad setTimeout jo display hone wala tha vo nhi hoga.
+        timeOut = setTimeout(greet, 3000, 'Himank', 'take care');
+        console.log(timeOut);
+
+        clearTimeout(timeOut);
+
+        // Will return after every second
+        // setInterval(greet, 1000, 'Hero', 'Skirrrr');
+
+        // Will not run a single time
+        intervalId = setInterval(greet, 1000, 'Hero','audiboss');
+        clearInterval(intervalId);
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime,1000);
+
+    </script>
+
+</body>
+</html>

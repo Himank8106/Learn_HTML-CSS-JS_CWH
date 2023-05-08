@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+
+    <style>
+        html{
+            font-size: 20px;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid red;
+            /* width: 800px;
+            height: 600px; */
+            height: 100vh;
+            width: 100vw;
+            font-size: 10px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        #first{
+            font-size: 5em;  /* 5em means parent ki size ka 5 times, i.e.50px */
+            padding: 2em;    /* 2em of 5em hoga, not of 10px so 2em=50*2=100px */
+        }
+
+        #second{
+            font-size: 2rem;  /* 2rem apne root i.e.html ke size se set hoga, so 2rem = 2*20 = 40px */
+            padding: 2rem;    /* 2rem of html hoga na ki font-size of second, so 2rem = 2*20 = 40px */
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">this is first heading</h1>
+        <h1 id="second">this is second heading</h1>
+        <h1 id="third">this is third heading</h1>
+
+    </div>
+</body>
+</html>

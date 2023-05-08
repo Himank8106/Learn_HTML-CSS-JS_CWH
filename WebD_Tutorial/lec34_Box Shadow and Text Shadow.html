@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* border: 2px solid red; */
+            padding: 2px 10px;
+            margin: 20px 10px;
+            background-color: azure;
+
+            /* box-shadow: offset-x offset-y color; */
+            /* positive values pe bottom and right me shadow show hogi */
+            box-shadow: 10px 10px rgb(196, 238, 196);
+
+            /* negative values pe top and left side me shadow show hogi */
+            box-shadow: -10px -10px rgb(242, 212, 212);
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* Blur Radius box ke chaaro aur shadow faila deta hai */
+            box-shadow: 10px 10px 15px green;
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* spread-radius shadow ki length increase kar deta hai, jyada increase karne par box ke chaaro aur shadow 
+            bhi shadow fail jaati hai */
+            /* positive values increase the size of the shadow, negative values decrease the size */
+            /* box-shadow: 10px 10px 20px 20px blue; */
+
+            box-shadow: 10px 10px 10px 20px rgba(5, 140, 190, 0.5);
+            /* 0.5 is alpha, it shows how dark the shadow is. greater the alpha, darker the colour */
+
+            /* Box ke inner side shadow denge */
+            box-shadow: inset 5px 5px red;
+
+            /* multiple shadows bhi de sakte hai */
+            box-shadow: 5px 5px rgb(213, 240, 166), 10px 10px aqua;
+        }
+
+        .card h2 {
+            text-shadow: 2px 2px rgb(234, 112, 112);
+            /* blur */
+            text-shadow: 2px 2px 3px rgb(234, 112, 112);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>I am Himank joshi</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique dolores asperiores modi molestias
+                incidunt. Aperiam, dignissimos voluptatibus. Velit debitis repudiandae autem quidem saepe, omnis porro
+                repellendus cum accusamus delectus libero impedit minus qui officia nam.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card-2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique dolores asperiores modi molestias
+                incidunt. Aperiam, dignissimos voluptatibus. Velit debitis repudiandae autem quidem saepe, omnis porro
+                repellendus cum accusamus delectus libero impedit minus qui officia nam.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card-3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique dolores asperiores modi molestias
+                incidunt. Aperiam, dignissimos voluptatibus. Velit debitis repudiandae autem quidem saepe, omnis porro
+                repellendus cum accusamus delectus libero impedit minus qui officia nam.</p>
+        </div>
+    </div>
+</body>
+
+</html>

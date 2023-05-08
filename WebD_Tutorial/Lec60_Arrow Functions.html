@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        This is an arrow function.
+    </div>
+
+    <script>
+
+        // Normal Function 
+        // function greet(){
+        //     console.log('Good Morning');
+        // }
+
+        // Arrow Function
+        let greet = () => {
+            console.log('Good Morning');
+        }
+        greet();
+
+        setTimeout(() => {
+            console.log('Hellu Guyzzzz!!!')
+        }, 2000);
+
+        // Secondary Shortcut
+        let greet1 = () => console.log('Pols Aagyi Pols!!!');
+        greet1();
+
+        let sum = (a,b) => {
+            return a+b;
+        };
+
+        // Primary Shortcut
+        let sum1 = (a,b) => a+b;
+
+        let sum2 = a => a/2;
+
+        let obj1={
+            greetings: 'Good Morning',
+            names: ['Himank','a','b','c'],
+            speak(){
+                this.names.forEach((students)=>{
+                    console.log(this.greetings + ' ' + students + ' bhai...');
+                });
+            }
+        }
+        obj1.speak();
+
+    </script>
+
+</body>
+</html>

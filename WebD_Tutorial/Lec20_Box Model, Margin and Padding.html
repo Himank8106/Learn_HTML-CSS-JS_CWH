@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: beige;
+        }
+
+        .container{
+            background-color: #ccc4d3;
+            border: 3px solid rebeccapurple;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            width: 400px;
+
+            /* padding-left: 20px;
+               padding-top: 30px;
+               padding-bottom: 40px;
+               padding-right: 50px;
+               Instead of write it four times, we can write as: 
+
+               padding: top right bottom left; --> This is the sequence
+               e.g. padding: 30px 50px 40px 20px;
+               
+               padding: 20px 30px;  --> padding: y(top/bottom) x(left/right) 
+               
+               Same apply for MARGIN also. */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio atque officia ea sunt labore, harum omnis ipsa numquam consequatur officiis?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio atque officia ea sunt labore, harum omnis ipsa numquam consequatur officiis?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio atque officia ea sunt labore, harum omnis ipsa numquam consequatur officiis?</p>
+    </div>
+</body>
+</html>

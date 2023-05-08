@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">Hellu</div>
+
+    <script>
+        let myVar = 30;
+        let myVar1 = 'string';
+        let myVar2 = true;
+        let myVar3 = null;
+        let myVar4 = undefined;
+
+        let employee = {
+            name: 'Himank',
+            salary: 10000000000,
+            channel: 'Code',
+            program: 'btech'
+        }
+
+        console.log(employee);
+
+        let names = [31,51,21,'Himank',null,undefined];
+        console.log(names);
+        // names[2] will give output 21
+        console.log(names[2]);
+
+        let names1 = new Array(51,21,31,'Himank',null,undefined);
+        console.log(names1);
+
+        console.log(names.length);
+
+        names = names.sort();
+        console.log(names);
+
+        names.push('this is pushed');
+        console.log(names);
+
+        console.log(employee.channel); 
+        console.log(employee.program); 
+        // or you can write
+        console.log(employee['channel']);
+        
+        // Two numbers in an array
+        let names2 = new Array(23,25);
+        // 24 elements in  an array
+        let names3 = new Array(23);
+        names3.push('Hiiii');
+        console.log(names3);
+        // names3[20] will give output undefined 
+        console.log(names3[20]);
+
+    </script>
+
+</body>
+</html>

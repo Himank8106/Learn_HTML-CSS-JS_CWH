@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa explicabo odio voluptates dicta, adipisci veritatis, quae quia maxime sequi deserunt nostrum, quaerat aut. Eum, quam quod amet placeat facilis expedita odio, praesentium rerum nam nemo asperiores neque. Consectetur neque, impedit at rerum assumenda ratione reiciendis, vero, eos iste officia sapiente.</p>
+    </div>
+
+    <script>
+
+        var string = "this";
+        var string1 = 'th"is';
+        var string2 = "Himank is a good boy";
+        console.log(string);
+        console.log(string1);
+        console.log(string+string1+string2);
+
+        // Template literals
+        var name = "Himank";
+        var place = 'Rajasthan';
+        var temp = `${name} is a good boy. He is from ${place}.`;
+        console.log(temp);
+
+        var len = name.length;
+        console.log(len);
+
+        console.log("Hi\nI am Himank.")
+        // If you want to print \n, use \ two times
+        console.log("Hi\\nI am Himank.")
+
+        // Constructor
+        var y = new String("this");
+        console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3> This is a h3 heading <h3>'
+
+    </script>
+
+</body>
+</html>

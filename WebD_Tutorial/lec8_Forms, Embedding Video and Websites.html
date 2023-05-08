@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML form tutorial</h2>
+    <form action="backend.php" target="_blank">
+        <div>
+            <!-- label me for="name" likhne se input ki id="name" call out hogi, i.e. agar box ya name dono me se kisi pe bhi
+                click karne par name likh sakte hai   -->
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name" placeholder="Enter your name"/>
+        </div><br>
+        <div>
+            Role: <input type="text" name="myRoll" placeholder="Enter your role"/>
+        </div><br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div><br>
+        <div>
+            <input type="date" name="myDate">
+        </div><br>
+        <div>
+            Bonus: <input type="number" name="myNumber">
+        </div><br> 
+        <div>
+            <label for="checkk">Checkbox: </label>
+            <input type="checkbox" id="checkk" name="myEligibility" checked>
+        </div><br>
+        <div>
+            Gender: Male<input type="radio" name="myGender">
+            Female<input type="radio" name="myGender">
+            Other<input type="radio" name="myGender">
+        </div><br>
+        <div>
+            Write your text here: <br><textarea name="myText" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="car">Select your car:</label>
+            <select name="myCar" id="car">
+                <option>Select your car</option>
+                <option value="RR">Rolls Royce Phantom</option>
+                <option value="Bentley">Bentley Flying Spur</option>
+            </select>
+        </div><br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div><br>
+    </form>
+
+    <!-- Embedding Video and Websites -->
+    <video src="himank.mp4" controls autoplay loop width="500px"></video><br>
+
+    <!-- Embedding video from youtube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- Every site doesn't allow to embed. e.g.Google -->
+    <iframe src="https://bing.com" frameborder="0" width="1200px" height="500px"></iframe>
+</body>
+
+</html>

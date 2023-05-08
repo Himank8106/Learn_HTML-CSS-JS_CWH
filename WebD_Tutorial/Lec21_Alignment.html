@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Unbounded&display=swap" rel="stylesheet">
+
+    <title>Alignment</title>
+
+    <style>
+        *{
+            /* margin: 0px;
+            padding: 0px; */
+            box-sizing: border-box;
+            
+        }
+
+        body{
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .container{
+            width: 800px;
+            border: 3px solid red;
+            background-color: rgb(230, 230, 184);
+            margin: 30px auto;
+        }
+
+        .item{
+            border: 3px solid rgb(53, 88, 6);
+            margin: 5px;
+            padding: 8px;
+            background-color: bisque;
+            border-radius: 5px;
+        }
+
+        #fruits{
+            float: right;
+            width: 49%;
+        }
+
+        #computer{
+            float: left;
+            width: 48%;
+        }
+
+        #stationary{
+            clear: both;
+            width: auto;
+        }
+
+        p,h3{
+            text-align: justify;
+        }
+
+        h3{
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        h1{
+            margin: 23px auto;
+            width: fit-content;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1><u>Welcome to my store</u> </h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem velit et hic sint laboriosam, voluptatem, dolorum, nobis odit non laudantium odio ipsam amet itaque. Culpa voluptate eos soluta aut optio.</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem velit et hic sint laboriosam, voluptatem, dolorum, nobis odit non laudantium odio ipsam amet itaque. Culpa voluptate eos soluta aut optio.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem velit et hic sint laboriosam, voluptatem, dolorum, nobis odit non laudantium odio ipsam amet itaque. Culpa voluptate eos soluta aut optio.</p>
+        </div>
+    </div>
+</body>
+</html>

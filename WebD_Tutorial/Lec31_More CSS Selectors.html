@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Selectors</title>
+
+    <style>
+        h1{
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        }
+
+        /* if p is contained by any li which is contained by div */
+        /* div li p{
+            color: rgb(37, 15, 233);
+            background-color: rgb(170, 179, 249);
+        } */
+
+        /* if p is right inside div, then this CSS will apply (direct child i.e. div ke direct andar p ho to apply hogi.) */
+        /* div > p {
+            color: red;
+            background-color: aqua;
+            font-weight: bold;
+        } */
+
+        /* if p is next after the div end i.e. p is the next sibling of div or p ke pehle <div></div> ho*/
+        div + p {
+            color: blue;
+            background-color: bisque;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="items"><p>this is another paragraph inside li</p></li>
+                <li>li will not get affected</li>
+                <p>this is para inside li</p>
+            </ul>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

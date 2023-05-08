@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himank's Fitness</title>
+
+    <style>
+        body{
+            
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('man.jpg');
+            height: 700px;
+        }
+
+        .left{
+            display: flex;
+            /* border: 2px solid blue; */
+            position: absolute;
+            left: 65px;
+            top: 20px;
+        }
+
+        .left img{
+            
+            align-self: center;
+            filter: invert(100%);
+            width: 100px;
+        }
+
+        .left1{
+            font-size: 20px;
+            text-align: center;
+            text-decoration: solid;
+            /* border: 2px solid blue; */
+            position: absolute;
+            left: 47px;
+            top: 100px;
+        }
+
+        .Mid{
+            /* border: 2px solid rgb(231, 67, 12); */
+            margin: 30px auto;
+            width: 60%;
+        }
+
+        .Right{
+            /* border: 2px solid green; */
+            position: absolute;
+            right: 35px;
+            top: 40px;
+        }
+
+        .navbar{
+            display: inline-block;
+        }
+
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover{
+            color: rgb(22, 213, 191);
+            text-decoration: solid;
+            text-decoration: underline;
+        }
+
+        #hi{
+            padding-right: 280px;
+        }
+
+        .btn{
+            margin: 0px 3px;
+            background-color: black;
+            color: white;
+            padding: 10px 10px;
+            font-size: 15px;
+            border: 3px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: grey;
+            color: black;
+            border-color: black;
+        }
+
+        .container{
+            background: url('blur.jpg');
+            border: 5px solid black;
+            margin: 70px 50px;
+            padding: 20px;
+            width: 28.5%;
+            border-radius: 25px;
+        }
+
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 375px;
+            padding: 8px;
+            margin: 15px auto;
+            border: 2px solid black;
+            border-radius: 7px;
+            font-size: 20px;
+            
+        }
+
+        .container h1{
+            text-decoration: underline;
+            color: black;
+            text-align: center;
+        }
+
+        .container button{
+            display: block;
+            width: 30%;
+            margin: 25px auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left" id="imagee">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="left1">
+            Himank's Fitness
+         </div>
+
+        <div class="Mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li id="hi"><a href="#">About</a></li>
+                <li><a href="#">Plans</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="Right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Now</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Fill the form to join right now!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Mobile Number">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Email">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
